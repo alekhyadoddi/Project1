@@ -1,0 +1,17 @@
+
+body{
+	background: url("../images/background1.jpg");
+
+}
+
+.text-top{
+	color: #ffffff;
+}
+.btn-primary-lg{
+  color: red;
+}
+.btn {
+	color: lightblue
+  margin: 50px;
+}
+
