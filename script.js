@@ -11,14 +11,62 @@ $(document).ready(function () {
     }
     
   }).then (function(response){
+    var age = response.faces[0].attributes.age.value;
+    var gender=response.faces[0].attributes.gender.value;
+    var surprisepercent=response.faces[0].attributes.emotion.surprise;
+    var sadnesspercent=response.faces[0].attributes.emotion.sadness;
+    var angerpercent=response.faces[0].attributes.emotion.anger;
+    var disgustpercent=response.faces[0].attributes.emotion.disgust;
+    var fearpercent=response.faces[0].attributes.emotion.fear;
+    var happinesspercent=response.faces[0].attributes.emotion.happiness;
+    var neutralpercent=response.faces[0].attributes.emotion.neutral;
 
+    $("#age").empty();
+    $("#age").append(age);
+  
+    $("#gender").empty();
+    $("#gender").append(gender);
+
+    $("#surprisepercent").empty();
+    $("#surprisepercent").append(surprisepercent);
+
+    $("#angerpercent").empty();
+    $("#angerpercent").append(angerpercent);
+
+    $("#fearpercent").empty();
+    $("#fearpercent").append(fearpercent);
+
+    $("#neutralpercent").empty();
+    $("#neutralpercent").append(neutralpercent);
+
+    $("#happinesspercent").empty();
+    $("#happinesspercent").append(happinesspercent);
+
+    $("#disgustpercent").empty();
+    $("#disgustpercent").append(disgustpercent);
+
+    $("#sadnesspercent").empty();
+    $("#sadnesspercent").append(sadnesspercent);
  
-  console.log(response);
-  //--console.log(response);
+
+console.log(response);
+console.log(response.faces[0].attributes.age.value);
+console.log(response.faces[0].attributes.gender.value);
+console.log(response.faces[0].attributes.emotion.anger);
+console.log(response.faces[0].attributes.emotion.sadness);
+console.log(response.faces[0].attributes.emotion.neutral);
+console.log(response.faces[0].attributes.emotion.disgust);
+console.log(response.faces[0].attributes.emotion.surprise);
+console.log(response.faces[0].attributes.emotion.fear);
+console.log(response.faces[0].attributes.emotion.happiness);
+
+
+
+
+
 });
 });
 
 
 
-//test
 
