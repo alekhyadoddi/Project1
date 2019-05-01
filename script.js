@@ -1,12 +1,33 @@
 
 $(document).ready(function () {
+  var x;
+  var queryURL;
+  window.loadFile = function (event) {
+    var image = document.getElementById('output');
+    image.src = URL.createObjectURL(event.target.files[0]);
+    console.log($('#output').attr('src'));
+  
+     x = $('#output').attr('src');
+    var imageurl='<img src="' + x + '"/>';
+   $('body').append(imageurl);
+  
+    console.log("x ret"+x);
+    queryURL = "https://api-us.faceplusplus.com/facepp/v3/detect?api_key=T58NXq8bmLhg7Szt9i_TT2POiN-YE_A0&api_secret=tDmaCtP_71ZtClEXw2dvxQL9Q8eGfgiW&image_url=" + x + "&return_attributes=gender,age,emotion";
+    
+   console.log("queryURL"+queryURL);
+   calldetect(queryURL);
+   
+  };
 
+   
+function calldetect(queryURL){
+console.log(queryURL);
   $.ajax({
     url: "https://mighty-brook-95893.herokuapp.com/cors",
     method: "POST",
     data: {
       method: "POST",
-      url: "https://api-us.faceplusplus.com/facepp/v3/detect?api_key=T58NXq8bmLhg7Szt9i_TT2POiN-YE_A0&api_secret=tDmaCtP_71ZtClEXw2dvxQL9Q8eGfgiW&image_url=https://i.ytimg.com/vi/QWgDR7btLb8/maxresdefault.jpg&return_attributes=gender,age,emotion",
+      url: queryURL,
       key: "efd92cf6cc5e7649916c4e73939e6281"
     }
     
@@ -65,9 +86,9 @@ console.log(response.faces[0].attributes.emotion.happiness);
 
 
 });
-});
 
 
+}
 
 var age;
 var gender;
@@ -707,7 +728,7 @@ var response2={
  var link="https://youtu.be/aqz-KE-bpKQ"
 
 
-
+});
 
 
 
