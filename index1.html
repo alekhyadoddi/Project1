@@ -28,16 +28,19 @@
 
     .btn.btn-success {
       float: center;
-      background: blue;
-      color: white;
+      background: lightskyblue;
+      margin-right: 100px;
+      margin-top: 100px;
     }
-    h2{
-      margin-left: center;
-      color: rgba(221, 221, 221, 0.288);
+
+    h2 {
+      text-align: center;
+      top: 50%;
+      right: 70%;
+      margin: center;
+      margin-top: 10px;
+      color: black;
       font-family: Arial, Helvetica, sans-serif;
-
-
-      
     }
   </style>
 
@@ -65,11 +68,6 @@
           </ul>
           </li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
-            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-          </ul>
         </div>
         <!--/.nav-collapse -->
       </div>
@@ -83,22 +81,80 @@
 
       <div class="row">
         <div class="col">
-          <p><img id="output"></p>
+
           <h2>Upload your photo to see the video of the day!</h2>
           <button type="button" class="btn btn-success">
             <label for="file" style="cursor: pointer;">Upload Image</label>
           </button>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <table class="table table-hover table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Parametr</th>
+                <th scope="col">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Age</td>
+                <td><span id="age"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Gender</td>
+                <td><span id="gender"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Surprise</td>
+                <td><span id="surprisepercent">%</span></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Anger</td>
+                <td><span id="sadnesspercent">%</span></td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Fear</td>
+                <td><span id="angerpercent">%</span></td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Neutral</td>
+                <td><span id="neutralpercent">%</span></td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Happy</td>
+                <td><span id="happinesspercent">%</span></td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Disgust</td>
+                <td><span id="disgustpercent">%</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-6">
+
+          <p><img id="output"></p>
           <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)"
-              style="display: none;">
+          style="display: none;"> 
           </p>
         </div>
-
-
-
-
       </div>
     </div>
 
+</div>
 
 
     <script>
@@ -112,9 +168,8 @@
       };
     </script>
 
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
