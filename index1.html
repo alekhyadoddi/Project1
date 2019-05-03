@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <style>
     body {
       margin: 0;
@@ -80,9 +80,21 @@
       </div>
       <!--/.container-fluid -->
     </nav>
+ 
+      <img class="target" id="target1" src = "https://m.media-amazon.com/images/M/MV5BMTc0MDMyMzI2OF5BMl5BanBnXkFtZTcwMzM2OTk1MQ@@._V1_UX140_CR0,0,140,209_AL_.jpg">
+    
+      <img class="target" id="target2" src = "https://m.media-amazon.com/images/M/MV5BMjI0MTg3MzI0M15BMl5BanBnXkFtZTcwMzQyODU2Mw@@._V1_UY209_CR7,0,140,209_AL_.jpg">
+      
+      <img class="target" id="target3" src = "https://m.media-amazon.com/images/M/MV5BMTQzNjU3MDczN15BMl5BanBnXkFtZTYwNzY2Njc4._V1_UY209_CR0,0,140,209_AL_.jpg">
 
+     
+      <img class="target" id="target4" src = "https://m.media-amazon.com/images/M/MV5BMTk1MjM5NDg4MF5BMl5BanBnXkFtZTcwNDg1OTQ4Nw@@._V1_UY209_CR7,0,140,209_AL_.jpg">
 
+      <img class="target" id="target5" src = "https://m.media-amazon.com/images/M/MV5BMTMxMDIzMDEzNF5BMl5BanBnXkFtZTcwODcxMjE2Mg@@._V1_UY209_CR2,0,140,209_AL_.jpg">
 
+      <img class="target" id="target6" src = "https://m.media-amazon.com/images/M/MV5BMjQyNzM2MjM1Ml5BMl5BanBnXkFtZTcwMDE5NjI3Mg@@._V1_UY209_CR5,0,140,209_AL_.jpg">
+
+    
     <div class="container">
 
 
@@ -103,19 +115,34 @@
 
       </div>
     </div>
+    <h2>Age: <span id="age"></span>
+    </h2>
+    
+    <h2>Gender: <span id="gender"></span>
+    </h2>
+    
+    <h2>%Surprise: <span id="surprisepercent"></span>
+    </h2>
+    
+    <h2>%Anger <span id="sadnesspercent"></span>
+    </h2>
+    
+    <h2>%Fear <span id="angerpercent"></span>
+    </h2>
+    
+    <h2>%Neutral <span id="neutralpercent"></span>
+    </h2>
+    
+    <h2>%Happy <span id="happinesspercent"></span>
+    </h2>
+    
+    <h2>%Disgust <span id="disgustpercent"></span>
+    </h2>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <script>
-      var loadFile = function (event) {
-        var image = document.getElementById('output');
-        image.src = URL.createObjectURL(event.target.files[0]);
-        console.log($('#output').attr('src'));
-
-        var x = $('#output').attr('src');
-        $('body').append('<img src="' + x + '"/>')
-      };
-    </script>
+    <script src="script.js"></script>
 
 
 
