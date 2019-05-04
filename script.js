@@ -74,7 +74,7 @@ $(document).ready(function() {
   console.log(response.faces[0].attributes.emotion.happiness);
   
   
-  
+  //change
   
   
   });
