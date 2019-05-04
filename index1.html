@@ -65,16 +65,14 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index1.html">Celebrities</a></li>
+            <li><a href="index2.html">Custom API</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
           </li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
-            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-          </ul>
+        
         </div>
         <!--/.nav-collapse -->
       </div>
@@ -97,36 +95,75 @@
     
     <div class="container">
 
+      <div class="col-sm-6" id="imageresult">
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Attribute</th>
+                <th scope="col">Value</th>
+              
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Age:</td>
+                <td id="age"></td>
+                
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Gender:</td>
+                <td id="gender"></td>
+               
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>%Surprise:</td>
+                <td id="surprisepercent"></td>
+              </tr>
 
+              <tr>
+                <th scope="row">4</th>
+                <td>%Angry</td>
+                <td id="angerpercent"></td>
+              </tr>
 
+              <tr>
+                <th scope="row">5</th>
+                <td>%Fear</td>
+                <td id="fearpercent"></td>
+              </tr>
 
+              <tr>
+                <th scope="row">6</th>
+                <td>%Neutral</td>
+                <td id="neutralpercent"></td>
+              </tr>
 
+              <tr>
+                <th scope="row">7</th>
+                <td>%Happy</td>
+                <td id="happinesspercent"></td>
+              </tr>
 
+              <tr>
+                <th scope="row">8</th>
+                <td>%Disgust</td>
+                <td id="disgustpercent"></td>
+              </tr>
+            </tbody>
+          </table>
       </div>
-    </div>
-    <h2>Age: <span id="age"></span>
-    </h2>
-    
-    <h2>Gender: <span id="gender"></span>
-    </h2>
-    
-    <h2>%Surprise: <span id="surprisepercent"></span>
-    </h2>
-    
-    <h2>%Anger <span id="sadnesspercent"></span>
-    </h2>
-    
-    <h2>%Fear <span id="angerpercent"></span>
-    </h2>
-    
-    <h2>%Neutral <span id="neutralpercent"></span>
-    </h2>
-    
-    <h2>%Happy <span id="happinesspercent"></span>
-    </h2>
-    
-    <h2>%Disgust <span id="disgustpercent"></span>
-    </h2>
+
+
+      <div class="card">
+        <div class="card-body">
+          By clicking on some of the most popular celebrities according to IMDB, it will run their picture through the Face ++ API and return some attributes such as age, gender, and a percent of their emotion 
+        </div>
+      </div>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
