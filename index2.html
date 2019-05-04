@@ -42,6 +42,80 @@
           </ul> -->
         </div>
       </nav>
+      <div class="image-container">
+          <div class="row">
+              <div class="col-sm-12">
+                <br>
+                <!-- First card is for handling the search parameters -->
+                <div class="imagecard">
+                  <div class="card-header">
+                    <strong>
+                      <i class="fa fa-list-alt"></i> Image URL</strong>
+                  </div>
+                  <div class="card-body">
+        
+                    <!-- Here we create an HTML Form for handling the inputs-->
+                    <form role="form">
+        
+                      <!-- Here we create the text box for capturing the search term-->
+                      <div class="form-group">
+                        <label for="search">Enter your Image URL here:</label>
+                        <input type="text" class="form-control" id="search-term">
+                      </div>
+    
+                      <!-- Here we have our final submit button -->
+                      <button type="submit" class="btn btn-default" id="run-search">
+                        <i class="fa fa-search"></i> Search</button>
+                      <button class="btn btn-default" id="clear-all">
+                        <i class="fa fa-trash"></i> Clear </button>
+        
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+<div class="col-sm-6" id="imagecol">
+<img src="#" id="image">
+</div>
+<div class="col-sm-6" id="imageresult">
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Attribute</th>
+            <th scope="col">Value</th>
+          
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Age:</td>
+            <td id="agevalue"></td>
+            
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Gender:</td>
+            <td id="gendervalue"></td>
+           
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Emotion:</td>
+            <td id="emotionvalue"></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  
+
+  </div>
+            </div>
+          
+          <div class="video-container">
+
       <button class="videobutton" >
           Click to watch your video of the day!
          </button>
@@ -116,6 +190,7 @@
                   
                   
                 </div>
+              </div> 
               </div>
               <script src="assets/javascript/script.js">
 
